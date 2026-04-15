@@ -1,15 +1,26 @@
 import os
 from groq import Groq
 from dotenv import load_dotenv
-
 import streamlit as st
 
 load_dotenv()
 
-# Use os.getenv for local dev and st.secrets for Streamlit Cloud
-api_key = os.getenv("GROQ_API_KEY") or (st.secrets["GROQ_API_KEY"] if "GROQ_API_KEY" in st.secrets else None)
-
-client = Groq(api_key=api_key)
+def get_groq_client():
+    """Lazy initialization of the Groq client to avoid import-time crashes."""
+    # Check os.getenv for local dev and st.secrets for Streamlit Cloud
+    api_key = os.getenv("GROQ_API_KEY") 
+    
+    if not api_key:
+        if "GROQ_API_KEY" in st.secrets:
+            api_key = st.secrets["GROQ_API_KEY"]
+            
+    if not api_key:
+        raise ValueError(
+            "GROQ_API_KEY not found. Please set it in your .env file (local) "
+            "or in Streamlit Clouds 'Advanced Settings -> Secrets' (deployed)."
+        )
+        
+    return Groq(api_key=api_key)
 
 def build_prompt(query, summary, guidelines, history):
 
@@ -36,6 +47,8 @@ Give a clear, actionable, and conversational EV infrastructure recommendation. I
 """
 
 def call_llm(prompt):
+    # Initialize client only when needed
+    client = get_groq_client()
 
     response = client.chat.completions.create(
         model="llama-3.1-8b-instant",

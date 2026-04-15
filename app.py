@@ -110,6 +110,23 @@ with st.sidebar:
 st.markdown("<h1 class='main-header'>⚡ Infrastructure Planner</h1>", unsafe_allow_html=True)
 st.markdown("<p style='opacity:0.6; margin-top:-10px'>State-of-the-art AI for EV Charging Simulation & Planning</p>", unsafe_allow_html=True)
 
+# API KEY CHECK
+import os
+api_key_exists = os.getenv("GROQ_API_KEY") or ("GROQ_API_KEY" in st.secrets)
+
+if not api_key_exists:
+    st.error("🔑 **GROQ_API_KEY is missing!**")
+    st.info("""
+    To fix this on Streamlit Cloud:
+    1. Go to **Manage app** -> **Settings** -> **Secrets**.
+    2. Add: `GROQ_API_KEY = "your-key-here"`
+    3. Save and refresh the page.
+    """)
+    st.stop()
+else:
+    # Optional: show a small success indicator or just proceed
+    pass
+
 # ================= SUGGESTIONS =================
 suggested_questions = [
     "--- Choose a suggested question ---",
