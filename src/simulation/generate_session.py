@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 
 def generate_sessions(location, n=200):
-    np.random.seed(42)
+    # np.random.seed(42)  # Removed for varied results
 
     data = []
     for _ in range(n):

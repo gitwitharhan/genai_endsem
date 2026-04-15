@@ -8,3 +8,5 @@ langgraph
 chromadb
 sentence-transformers
 python-dotenv
+groq
+pypdf
