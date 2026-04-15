@@ -4,6 +4,7 @@ numpy
 scikit-learn
 joblib
 langchain
+langchain-community
 langgraph
 chromadb
 sentence-transformers
