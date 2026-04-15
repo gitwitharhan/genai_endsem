@@ -2,9 +2,14 @@ import os
 from groq import Groq
 from dotenv import load_dotenv
 
+import streamlit as st
+
 load_dotenv()
 
-client = Groq(api_key=os.getenv("GROQ_API_KEY"))
+# Use os.getenv for local dev and st.secrets for Streamlit Cloud
+api_key = os.getenv("GROQ_API_KEY") or (st.secrets["GROQ_API_KEY"] if "GROQ_API_KEY" in st.secrets else None)
+
+client = Groq(api_key=api_key)
 
 def build_prompt(query, summary, guidelines, history):
 
