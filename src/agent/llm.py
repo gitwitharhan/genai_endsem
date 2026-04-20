@@ -7,7 +7,7 @@ load_dotenv()
 
 def get_groq_client():
     """Lazy initialization of the Groq client to avoid import-time crashes."""
-    # Check os.getenv for local dev and st.secrets for Streamlit Cloud
+    # Check os.getenv for local development and st.secrets for Streamlit Cloud
     api_key = os.getenv("GROQ_API_KEY") 
     
     if not api_key:
