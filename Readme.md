@@ -55,7 +55,7 @@ genai_ENDSEM/
     │   └── ingest.py     # PDF processing & Embedding creation
     ├── simulation/       # Synthetic Data Generation
     │   └── generate_session.py
-    └── utils/            # Shared Helpers (Mapping, etc.)
+    └── utils/            # Shared Helpers (Mapping,etc.)
 ```
 
 ---
