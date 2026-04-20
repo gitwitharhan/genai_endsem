@@ -6,7 +6,7 @@ A state-of-the-art, conversational AI platform designed to simulate, analyze, an
 [Tech Stack](https://img.shields.io/badge/Tech-LangGraph%20|%20Groq%20|%20ChromaDB-blue?style=for-the-badge)
 [[Live Demo](https://img.shields.io/badge/Live-Demo-success?style=for-the-badge)](https://evgptmilestone2.streamlit.app/)
 
----
+--
 
 ## 🌟 Key Features
 
@@ -26,7 +26,7 @@ A state-of-the-art, conversational AI platform designed to simulate, analyze, an
 - **Modern UI**: A glassmorphic, dark-themed interface with smooth gradients and responsive micro-animations.
 - **Professional Analytics**: Clean typography and intuitive layout for clear data interpretation.
 
----
+--
 
 ## 🛠️ Project Architecture & Folder Structure
 
@@ -58,7 +58,7 @@ genai_ENDSEM/
     └── utils/            # Shared Helpers (Mapping,etc.)
 ```
 
----
+--
 
 ## 🚀 Getting Started
 
@@ -91,7 +91,7 @@ GROQ_API_KEY=your_actual_api_key_here
 streamlit run app.py
 ```
 
----
+--
 
 ## ⚙️ How the Agent Works
 
@@ -100,7 +100,7 @@ streamlit run app.py
 3.  **RAG Enrichment**: Guidelines are retrieved from the local PDF knowledge base (ChromaDB) to ensure results align with regulatory standards.
 4.  **Expert Synthesis**: Groq LLM combines conversation history, predicted demand, and retrieved guidelines to generate a conversational report.
 
----
+--
 
 ## 📄 License
 This project is licensed under the MIT License.
