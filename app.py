@@ -2,14 +2,14 @@ import streamlit as st
 import pandas as pd
 from src.agent.graph import build_graph
 
-# ================= PAGE CONFIG =================
+# =============== PAGE CONFIG =================
 st.set_page_config(
     page_title="⚡ EV Planner Pro",
     page_icon="⚡",
     layout="wide",
 )
 
-# ================= PREMIUM CSS =================
+# =============== PREMIUM CSS =================
 st.markdown("""
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
