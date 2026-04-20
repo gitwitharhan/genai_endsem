@@ -2,9 +2,9 @@
 
 A state-of-the-art, conversational AI platform designed to simulate, analyze, and plan electric vehicle (EV) charging infrastructure. Utilizing agentic workflows and real-time stochastic simulations, this tool provides actionable insights for urban planners and energy providers.
 
-![EV Planner UI Preview](https://img.shields.io/badge/UI-Premium-blueviolet?style=for-the-badge)
-![Tech Stack](https://img.shields.io/badge/Tech-LangGraph%20|%20Groq%20|%20ChromaDB-blue?style=for-the-badge)
-[![Live Demo](https://img.shields.io/badge/Live-Demo-success?style=for-the-badge)](https://evgptmilestone2.streamlit.app/)
+[EV Planner UI Preview](https://img.shields.io/badge/UI-Premium-blueviolet?style=for-the-badge)
+[Tech Stack](https://img.shields.io/badge/Tech-LangGraph%20|%20Groq%20|%20ChromaDB-blue?style=for-the-badge)
+[[Live Demo](https://img.shields.io/badge/Live-Demo-success?style=for-the-badge)](https://evgptmilestone2.streamlit.app/)
 
 ---
 
