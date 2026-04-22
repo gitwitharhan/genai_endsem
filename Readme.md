@@ -2,11 +2,13 @@
 
 A state-of-the-art, conversational AI platform designed to simulate, analyze, and plan electric vehicle (EV) charging infrastructure. Utilizing agentic workflows and real-time stochastic simulations, this tool provides actionable insights for urban planners and energy providers.
 
+[EV Planner UI Preview](https://img.shields.io/badge/UI-Premium-blueviolet?style=for-the-badge)
 ![Tech Stack](https://img.shields.io/badge/Tech-LangGraph%20|%20Groq%20|%20ChromaDB-blue?style=for-the-badge)
 ![Streamlit](https://img.shields.io/badge/Deployed-Streamlit%20Cloud-FF4B4B?style=for-the-badge&logo=streamlit)
 ![Python](https://img.shields.io/badge/Python-3.11+-3776AB?style=for-the-badge&logo=python)
+[[Live Demo](https://img.shields.io/badge/Live-Demo-success?style=for-the-badge)](https://evgptmilestone2.streamlit.app/)
 
----
+--
 
 ## 🌟 Key Features
 
@@ -31,7 +33,7 @@ A state-of-the-art, conversational AI platform designed to simulate, analyze, an
 - **Gradient header** and **Inter typography** for a professional look.
 - **Hover micro-animations** on buttons and metrics for an interactive feel.
 
----
+--
 
 ## 🛠️ Project Architecture
 
@@ -89,7 +91,7 @@ genai_ENDSEM/
         └── mapping.py           # Region-to-location mapping utility
 ```
 
----
+--
 
 ## 🚀 Getting Started
 
@@ -127,7 +129,7 @@ GROQ_API_KEY=your_actual_api_key_here
 streamlit run app.py
 ```
 
----
+--
 
 ## ☁️ Deploying to Streamlit Cloud
 
@@ -189,7 +191,7 @@ The report covers:
 | PDF Processing        | LangChain + PyPDF                        |
 | Secrets Management    | python-dotenv + Streamlit Secrets        |
 
----
+--
 
 ## 📄 License
 
